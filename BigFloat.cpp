@@ -759,18 +759,87 @@ BigFloat BigFloat::operator+(const BigFloat& two)
 {
 	return Add(*this,two);
 }
+BigFloat BigFloat::operator+(const BigInt& two)
+{
+	BigFloat val2(two);
+	return Add(*this,val2);
+}
+BigFloat BigFloat::operator+(int two)
+{
+	BigFloat val2(to_string(two));
+	return Add(*this,val2);
+}
+
+BigFloat BigFloat::operator+(float two)
+{
+	BigFloat val2(to_string(two));
+	return Add(*this,val2);
+}
+
+
 BigFloat BigFloat::operator-(const BigFloat& two)
 {
 	return Minus(*this,two);
 }
+BigFloat BigFloat::operator-(const BigInt& two)
+{
+	BigFloat val2(two);
+	return Add(*this,val2);
+}
+BigFloat BigFloat::operator-(int two)
+{
+	BigFloat val2(to_string(two));
+	return Add(*this,val2);
+}
+
+BigFloat BigFloat::operator-(float two)
+{
+	BigFloat val2(to_string(two));
+	return Add(*this,val2);
+}
+
 BigFloat BigFloat::operator*(const BigFloat& two)
 {
 	return Multiply(*this,two);
 }
+BigFloat BigFloat::operator*(const BigInt& two)
+{
+	BigFloat val2(two);
+	return Add(*this,val2);
+}
+BigFloat BigFloat::operator*(int two)
+{
+	BigFloat val2(to_string(two));
+	return Add(*this,val2);
+}
+
+BigFloat BigFloat::operator*(float two)
+{
+	BigFloat val2(to_string(two));
+	return Add(*this,val2);
+}
+
 BigFloat BigFloat::operator/(const BigFloat& two)
 {
 	return Division(*this,two);
 }
+BigFloat BigFloat::operator/(const BigInt& two)
+{
+	BigFloat val2(two);
+	return Add(*this,val2);
+}
+BigFloat BigFloat::operator/(int two)
+{
+	BigFloat val2(to_string(two));
+	return Add(*this,val2);
+}
+
+BigFloat BigFloat::operator/(float two)
+{
+	BigFloat val2(to_string(two));
+	return Add(*this,val2);
+}
+
 //suffix ++ --
 BigFloat& BigFloat::operator++(int)
 {	

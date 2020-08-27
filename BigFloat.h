@@ -70,10 +70,25 @@ public:
 	int      CompareList(vector<char> one, vector<char> two);
 
 	//operator overload
-	BigFloat operator+(const BigFloat& two);
+	BigFloat operator+(const BigFloat& two);	
+	BigFloat operator+(const BigInt& two);	
+	BigFloat operator+(int two);
+	BigFloat operator+(float two);
+	
 	BigFloat operator-(const BigFloat& two);
+	BigFloat operator-(const BigInt& two);	
+	BigFloat operator-(int two);
+	BigFloat operator-(float two);
+
 	BigFloat operator*(const BigFloat& two);
+	BigFloat operator*(const BigInt& two);	
+	BigFloat operator*(int two);
+	BigFloat operator*(float two);
+
 	BigFloat operator/(const BigFloat& two);
+	BigFloat operator/(const BigInt& two);	
+	BigFloat operator/(int two);
+	BigFloat operator/(float two);
 	//suffix ++ --
 	// 括号中插入 int 表示后缀
 	BigFloat& operator++(int);
